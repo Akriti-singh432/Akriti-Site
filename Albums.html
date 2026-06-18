@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoundWave - Albums</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'cancas',sans-serif;
+}
+
+body{
+    background:#0F172A;
+    color:white;
+}
+
+/* Navbar */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#020617;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    background:linear-gradient(135deg,#8B5CF6,#EC4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#EC4899;
+}
+
+/* Hero Section */
+.hero{
+    height:45vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#8B5CF6,#EC4899);
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Search */
+.search-box{
+    text-align:center;
+    margin:40px 0;
+}
+
+.search-box input{
+    width:60%;
+    max-width:500px;
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    background:#1E293B;
+    color:white;
+    outline:none;
+}
+
+/* Album Grid */
+.album-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.album-card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    text-align:center;
+}
+
+.album-card:hover{
+    transform:translateY(-8px);
+}
+
+.album-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.album-info{
+    padding:20px;
+}
+
+.album-info h2{
+    margin-bottom:10px;
+}
+
+.album-info p{
+    color:#CBD5E1;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#8B5CF6,#EC4899);
+    font-weight:600;
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+    text-align:center;
+    padding:25px;
+    background:#020617;
+}
+
+@media(max-width:768px){
+
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .search-box input{
+        width:90%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🎵 SoundWave</div>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Songpage.html">Songs</a>
+        <a href="Artists.html">Artists</a>
+        <a href="Albums.html">Albums</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>My favorite Albums</h1>
+        <p>Explore trending albums and collections.</p>
+    </div>
+</section>
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="🔍 Search Albums..." onkeyup="searchAlbum()">
+</div>
+
+<div class="album-container">
+
+    <div class="album-card">
+        <img src="BB.jpg">
+        <div class="album-info">
+            <h2>Ramaiya Vastavaiya</h2>
+            <p> Bollywood Album</p>
+            <a href="#" class="btn">View Album</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="https://picsum.photos/400/400?random=12">
+        <div class="album-info">
+            <h2>Brahmāstra</h2>
+            <p>Popular Soundtrack Collection</p>
+            <a href="#" class="btn">View Album</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="https://picsum.photos/400/400?random=13">
+        <div class="album-info">
+            <h2>Ruhpos</h2>
+            <p>Top Bollywood Hits</p>
+            <a href="#" class="btn">View Album</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="AA.jpg">
+        <div class="album-info">
+            <h2>Rockstar</h2>
+            <p>Classic Music Album</p>
+            <a href="#" class="btn">View Album</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="Cracher3D.jpg">
+        <div class="album-info">
+            <h2>Cracher3D Movie</h2>
+            <p>Trending Bollywood Songs</p>
+            <a href="#" class="btn">View Album</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="Bhut.jpg">
+        <div class="album-info">
+            <h2> Bhutiya Movie</h2>
+            <p> Most daring Movie
+            </p>
+            <a href="#" class="btn">View Album</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 SoundWave Music Platform <br>
+</footer>
+
+<script>
+function searchAlbum(){
+
+    let input = document.getElementById("search").value.toLowerCase();
+    let cards = document.querySelectorAll(".album-card");
+
+    cards.forEach(card=>{
+
+        let title = card.querySelector("h2").innerText.toLowerCase();
+
+        if(title.includes(input)){
+            card.style.display = "block";
+        }else{
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
