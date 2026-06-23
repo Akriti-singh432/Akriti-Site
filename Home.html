@@ -30,14 +30,29 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo span{
     font-size:32px;
     font-weight:700;
     background:linear-gradient(135deg,#8B5CF6,#EC4899);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+}
+
+.logoimg{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:12px;
+    display:block;
 }
 
 nav a{
@@ -48,7 +63,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#EC4899;
+    color:#0EA5E9;
 }
 
 /* Hero */
@@ -58,16 +73,29 @@ nav a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:linear-gradient(135deg,#ee72d7,#19a98c,#1eb5b3);
+    background:linear-gradient(
+        135deg,
+        #020617 0%,
+        #0A2540 50%,
+        #0EA5E9 100%
+    );
 }
-
 .hero h1{
     font-size:70px;
+    color:white;
+    text-shadow:
+        0 0 10px rgba(14,165,233,.6),
+        0 0 20px rgba(14,165,233,.4);
 }
 
 .hero p{
-    margin:15px 0;
-    font-size:20px;
+    margin:20px 0;
+    font-size:22px;
+    line-height:1.8;
+    color:#E2E8F0;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .btn{
@@ -185,7 +213,10 @@ footer{
 <body>
 
 <header>
-    <div class="logo">🎵 Akriti Real Voice</div>
+   <div class="logo">
+    <img src="Logo2.jpg" alt="Logo" class="logoimg">
+    <span>Akriti Real Voice</span>
+</div>
 
     <nav>
         <a href="Home.html">Home</a>
@@ -199,7 +230,7 @@ footer{
 <section class="hero">
     <div>
         <h1>Welcome to Akriti Real Voice</h1>
-<p>Where Every Note Tells a Story 🎵</p>
+<p>Where Every Note Tells a Story </p>
         <a href="#songs" class="btn">Start Listening</a>
     </div>
 </section>
