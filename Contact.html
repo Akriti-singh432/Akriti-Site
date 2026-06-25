@@ -5,208 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SoundWave - Contact Us</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-.nav{
-    background-color:antiquewhite;
-    margin-top:20px;
-    border-radius:7px;
-    
-}
-body{
-    background:#0F172A;
-    color:white;
-}
-
-/* Navbar */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:#020617;
-    position:sticky;
-    top:0;
-    z-index:1000;
-     border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo span{
-    font-size:32px;
-    font-weight:700;
-    background:linear-gradient(135deg,#8B5CF6,#EC4899);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.logoimg{
-    width:90px;
-    height:90px;
-    object-fit:cover;
-    border-radius:15px;
-    background:#020617;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#0EA5E9;
-}
-
-/* Hero Section */
-.hero{
-    height:80vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    background:linear-gradient(
-        135deg,
-        #020617 0%,
-        #0A2540 50%,
-        #0EA5E9 100%
-    );
-}
-
-.hero h1{
-    font-size:70px;
-    color:white;
-    text-shadow:
-    0 0 10px rgba(14,165,233,.6),
-    0 0 20px rgba(14,165,233,.4);
-}
-
-.hero p{
-    margin:20px 0;
-    font-size:22px;
-    line-height:1.8;
-    color:#E2E8F0;
-    max-width:800px;
-    margin-left:auto;
-    margin-right:auto;
-}
-/* Contact Form */
-.contact-section{
-    width:90%;
-    max-width:700px;
-    margin:50px auto;
-}
-
-.contact-box{
-    background:rgba(243, 114, 8, 0.08);
-    backdrop-filter:blur(10px);
-    padding:35px;
-    border-radius:20px;
-}
-
-.contact-box h2{
-    text-align:center;
-    margin-bottom:25px;
-}
-
-.input-group{
-    margin-bottom:20px;
-}
-
-.input-group label{
-    display:block;
-    margin-bottom:8px;
-}
-
-.input-group input,
-.input-group textarea{
-    width:100%;
-    padding:14px;
-    border:none;
-    border-radius:10px;
-    background:#1E293B;
-    color:white;
-    outline:none;
-}
-
-.input-group textarea{
-    resize:none;
-    height:120px;
-}
-
-.btn{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:50px;
-    cursor:pointer;
-    font-size:16px;
-    font-weight:600;
-    color:white;
-    background:linear-gradient(135deg,#8B5CF6,#EC4899);
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-/* Contact Info */
-.info{
-    margin-top:40px;
-    text-align:center;
-}
-
-.info p{
-    margin:10px 0;
-    color:#CBD5E1;
-}
-
-/* Footer */
-footer{
-    margin-top:50px;
-    text-align:center;
-    padding:25px;
-    background:#020617;
-}
-
-@media(max-width:768px){
-
-    nav{
-        display:none;
-    }
-
-    .hero h1{
-        font-size:35px;
-    }
-
-    .contact-box{
-        padding:20px;
-    }
-}
-</style>
 </head>
 
 <body>
-
+<div class="top-bar"></div>
 <header>
     <div class="logo">
     <img src="Logo2.jpg" alt="Logo" class="logoimg">
-    <span>Akriti Real Voice</span>
 </div>
 
 
@@ -222,7 +30,9 @@ footer{
 <section class="hero">
     <div>
         <h1>Let's Connect</h1>
-<p>Stay Connected Through Music</p>
+<p class="tagline">
+   Stay  <span class="middle">Connected Through </span> Music
+</p>
     </div>
 </section>
 
@@ -230,7 +40,7 @@ footer{
 
     <div class="contact-box">
 
-        <h2>Send a Message</h2>
+        <h2 >Send a Message</h2>
 
         <form>
 
@@ -260,38 +70,37 @@ footer{
 
     </div>
 
-    <div class="info">
-    <p>
-        📸 Instagram:
+    <div class="social-section">
+    <h2>Follow Us</h2>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://x.com" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+
         <a href="https://instagram.com/akritirealvoice25s" target="_blank">
-            akritirealvoice25s
+            <i class="fab fa-instagram"></i>
         </a>
-    </p>
 
-    <p>
-        📘 Facebook:
-        <a href="https://facebook.com/yourpage" target="_blank">
-            Akriti Singh
+        <a href="https://linkedin.com" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
         </a>
-    </p>
 
-    <p>
-        ▶️ YouTube:
         <a href="https://youtube.com/@akritirealvoice-25s" target="_blank">
-            @akritirealvoice-25s
+            <i class="fab fa-youtube"></i>
         </a>
-    </p>
-
-    <p>📍 Location: Ballia(UP), India</p>
+    </div>
 </div>
-
 </section>
 
 <footer>
-    <h3>🎤 Akriti Real Voice</h3>
-    <p>Where Every Note Tells a Story 🎵</p>
+    <h3> Akriti Real Voice</h3>
+    <p>Where Every Note Tells a Story </p>
     <p>© 2026 Akriti Real Voice. All Rights Reserved.</p>
 </footer>
-
 </body>
 </html>

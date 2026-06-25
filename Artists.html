@@ -5,199 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SoundWave - Artists</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Artists.css">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
 
-body{
-    background:#0F172A;
-    color:white;
-}
-
-/* Navbar */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:#020617;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo span{
-    font-size:32px;
-    font-weight:700;
-    background:linear-gradient(135deg,#8B5CF6,#EC4899);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.logoimg{
-    width:90px;
-    height:90px;
-    object-fit:cover;
-    border-radius:12px;
-    display:block;
-}
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#0EA5E9;
-}
-
-/* Hero Section */
-.hero{
-    height:80vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(
-        135deg,
-        #020617 0%,
-        #0A2540 50%,
-        #0EA5E9 100%
-    );
-}
-
-.hero h1{
-    font-size:70px;
-    color:white;
-    text-shadow:
-        0 0 10px rgba(14,165,233,.6),
-        0 0 20px rgba(14,165,233,.4);
-}
-
-.hero p{
-    margin:20px 0;
-    font-size:22px;
-    line-height:1.8;
-    color:#E2E8F0;
-    max-width:800px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-/* Search Box */
-.search-box{
-    text-align:center;
-    margin:40px 0;
-}
-
-.search-box input{
-    width:60%;
-    max-width:500px;
-    padding:15px;
-    border:none;
-    border-radius:50px;
-    background:#1E293B;
-    color:white;
-    outline:none;
-}
-
-/* Artist Cards */
-.artist-container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.artist-card{
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
-    border-radius:20px;
-    overflow:hidden;
-    text-align:center;
-    transition:.3s;
-}
-
-.artist-card:hover{
-    transform:translateY(-8px);
-}
-
-.artist-card img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-}
-
-.artist-info{
-    padding:20px;
-}
-
-.artist-info h2{
-    margin-bottom:10px;
-}
-
-.artist-info p{
-    color:#CBD5E1;
-    margin-bottom:15px;
-}
-
-.btn{
-    display:inline-block;
-    padding:10px 20px;
-    background:linear-gradient(135deg,#8B5CF6,#EC4899);
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:600;
-}
-
-/* Footer */
-footer{
-    margin-top:50px;
-    text-align:center;
-    padding:25px;
-    background:#020617;
-}
-
-@media(max-width:768px){
-
-    nav{
-        display:none;
-    }
-
-    .hero h1{
-        font-size:35px;
-    }
-
-    .search-box input{
-        width:90%;
-    }
-}
-</style>
 </head>
 
 <body>
-
+<div class="top-bar"></div>
 <header>
    <div class="logo">
     <img src="Logo2.jpg" alt="Logo" class="logoimg">
-    <span>Akriti Real Voice</span>
 </div>
     <nav>
         <a href="Home.html">Home</a>
@@ -211,12 +28,14 @@ footer{
 <section class="hero">
     <div>
         <h1>My Musical Inspirations</h1>
-<p>Voices That Inspire My Singing Journey</p>
+<p class="tagline">
+   Voices That <span class="middle">My Inspire</span> Singing Journey
+</p>
     </div>
 </section>
 
 <div class="search-box">
-    <input type="text" id="search" placeholder="🔍 Search Artists..." onkeyup="searchArtist()">
+    <input type="text" id="search" placeholder="Search Artists..." onkeyup="searchArtist()">
 </div>
 
 <div class="artist-container">

@@ -5,210 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SoundWave - Songs</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Songpage.css">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#0F172A;
-    color:white;
-}
-
-/* Navbar */
-/* Navbar */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:#020617;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo span{
-    font-size:32px;
-    font-weight:700;
-    background:linear-gradient(135deg,#8B5CF6,#EC4899);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.logoimg{
-    width:90px;
-    height:90px;
-    object-fit:cover;
-    border-radius:12px;
-    display:block;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#0EA5E9;
-}
-
-/* Hero */
-.hero{
-    height:80vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(
-        135deg,
-        #020617 0%,
-        #0A2540 50%,
-        #0EA5E9 100%
-    );
-}
-.hero h1{
-    font-size:70px;
-    color:white;
-    text-shadow:
-        0 0 10px rgba(14,165,233,.6),
-        0 0 20px rgba(14,165,233,.4);
-}
-.hero p{
-    margin:20px 0;
-    font-size:22px;
-    line-height:1.8;
-    color:#E2E8F0;
-    max-width:800px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-/* Search */
-.search-box{
-    text-align:center;
-    margin:40px 0;
-}
-
-.search-box input{
-    width:60%;
-    max-width:500px;
-    padding:15px;
-    border:none;
-    border-radius:50px;
-    background:#1E293B;
-    color:white;
-    outline:none;
-}
-
-/* Song Cards */
-.song-container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-}
-
-.song-card{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
-    border-radius:20px;
-    padding:20px;
-    margin-bottom:20px;
-    transition:.3s;
-}
-
-.song-card:hover{
-    transform:translateY(-5px);
-}
-
-.song-left{
-    display:flex;
-    align-items:center;
-}
-
-.song-left img{
-    width:90px;
-    height:90px;
-    border-radius:15px;
-    margin-right:15px;
-    object-fit:cover;
-}
-
-.song-info h2{
-    margin-bottom:5px;
-}
-
-.song-info p{
-    color:#CBD5E1;
-}
-
-audio{
-    width:300px;
-}
-
-/* Footer */
-footer{
-    margin-top:50px;
-    text-align:center;
-    padding:25px;
-    background:#020617;
-}
-
-@media(max-width:768px){
-
-    .song-card{
-        flex-direction:column;
-        gap:15px;
-        text-align:center;
-    }
-
-    .song-left{
-        flex-direction:column;
-    }
-
-    .song-left img{
-        margin-right:0;
-        margin-bottom:10px;
-    }
-
-    nav{
-        display:none;
-    }
-
-    .hero h1{
-        font-size:35px;
-    }
-
-    audio{
-        width:100%;
-    }
-}
-</style>
 </head>
 
 <body>
-
+<div class="top-bar"></div>
 <header>
    <div class="logo">
     <img src="Logo2.jpg" alt="Logo" class="logoimg">
-    <span>Akriti Real Voice</span>
 </div>
     <nav>
         <a href="Home.html">Home</a>
@@ -222,36 +27,38 @@ footer{
 <section class="hero">
     <div>
         <h1>My Songs Collection</h1>
-<p>Feel the Music, Feel the Melody</p>
+<p class="tagline">
+   Feel the Music<span class="middle"> & </span> Feel the Melody
+</p>
     </div>
 </section>
 
 <div class="search-box">
-    <input type="text" id="search" placeholder="🔍 Search Songs..." onkeyup="searchSongs()">
+    <input type="text" id="search"
+           placeholder="Search Songs..."
+           onkeyup="searchSongs()">
 </div>
-
 <div class="song-container">
-
+<section class="song-list" id="songs">
     <div class="song-card">
         <div class="song-left">
-            <a href="Lyrices.html" target="_blank">
-    <img src="Raabta.jpg" alt="Raabta Song">
-</a>
+            <img src="raabta.jpg" alt="Raabta">
+
             <div class="song-info">
-               
                 <h2>Raabta</h2>
                 <p>Movie: Agent Vinod</p>
             </div>
         </div>
 
         <audio controls>
-            <source src="Raabta.mp3" type="audio/mpeg">
+            <source src="raabta.mp3" type="audio/mpeg">
         </audio>
     </div>
 
     <div class="song-card">
         <div class="song-left">
-            <img src="Tum hi ho.jpg">
+            <img src="Tum hi ho.jpg" alt="Tum Hi Ho">
+
             <div class="song-info">
                 <h2>Tum Hi Ho</h2>
                 <p>Movie: ABCD</p>
@@ -265,7 +72,8 @@ footer{
 
     <div class="song-card">
         <div class="song-left">
-            <img src="https://picsum.photos/200?random=3">
+            <img src="https://picsum.photos/200?random=3" alt="Kesariya">
+
             <div class="song-info">
                 <h2>Kesariya</h2>
                 <p>Movie: Brahmāstra</p>
@@ -276,12 +84,12 @@ footer{
             <source src="kesariya.mp3" type="audio/mpeg">
         </audio>
     </div>
-
+</section>
 </div>
 
 <footer>
-    <h3>🎤 Akriti Real Voice</h3>
-    <p>Where Every Note Tells a Story 🎵</p>
+    <h3>Akriti Real Voice</h3>
+    <p>Where Every Note Tells a Story </p>
     <p>© 2026 Akriti Real Voice. All Rights Reserved.</p>
 </footer>
 
