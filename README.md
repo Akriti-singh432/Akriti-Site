@@ -34,7 +34,7 @@ Akriti Real Voice is a music platform designed using HTML and CSS. The website p
 
 ### Home Page
 
-![Akriti Real Voice Homepage](images/homepage.png)
+![Akriti Real Voice homepage](images/homepage.png)
 
 > Save your screenshot as **homepage.png** inside the **images** folder.
 
