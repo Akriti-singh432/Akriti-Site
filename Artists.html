@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SoundWave - Artists</title>
+<title>Singing Profolio</title>
 
 <link rel="stylesheet" href="Artists.css">
 
@@ -79,29 +79,10 @@
 </div>
 
 <footer>
-    <h3>🎤 Akriti Real Voice</h3>
-    <p>Where Every Note Tells a Story 🎵</p>
+    <h3> Akriti Real Voice</h3>
+    <p>Where Every Note Tells a Story </p>
     <p>© 2026 Akriti Real Voice. All Rights Reserved.</p>
 </footer>
-
-<script>
-function searchArtist(){
-
-    let input = document.getElementById("search").value.toLowerCase();
-    let cards = document.querySelectorAll(".artist-card");
-
-    cards.forEach(card=>{
-
-        let name = card.querySelector("h2").innerText.toLowerCase();
-
-        if(name.includes(input)){
-            card.style.display="block";
-        }else{
-            card.style.display="none";
-        }
-    });
-}
-</script>
 
 </body>
 </html>

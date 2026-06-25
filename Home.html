@@ -94,36 +94,5 @@
     <p>© 2026 Akriti Real Voice. All Rights Reserved.</p>
 </footer>
 
-<script>
-function playSong(id){
-
-    let songs = document.querySelectorAll("audio");
-
-    songs.forEach(song=>{
-        song.pause();
-        song.currentTime = 0;
-    });
-
-    document.getElementById(id).play();
-}
-
-function searchSongs(){
-
-    let input = document.getElementById("search").value.toLowerCase();
-    let songs = document.querySelectorAll(".song");
-
-    songs.forEach(song=>{
-
-        let title = song.querySelector("h3").innerText.toLowerCase();
-
-        if(title.includes(input)){
-            song.style.display="flex";
-        }else{
-            song.style.display="none";
-        }
-    });
-}
-</script>
-
 </body>
 </html>

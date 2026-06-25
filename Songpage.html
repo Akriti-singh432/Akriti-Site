@@ -93,22 +93,7 @@
     <p>© 2026 Akriti Real Voice. All Rights Reserved.</p>
 </footer>
 
-<script>
-function searchSongs() {
-    let input = document.getElementById("search").value.toLowerCase();
-    let cards = document.querySelectorAll(".song-card");
 
-    cards.forEach(card => {
-        let title = card.querySelector("h2").innerText.toLowerCase();
-
-        if(title.includes(input)){
-            card.style.display = "flex";
-        } else {
-            card.style.display = "none";
-        }
-    });
-}
-</script>
 
 </body>
 </html>

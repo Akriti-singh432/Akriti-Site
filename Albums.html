@@ -100,29 +100,10 @@
 </div>
 
 <footer>
-    <h3>🎤 Akriti Real Voice</h3>
-    <p>Where Every Note Tells a Story 🎵</p>
+    <h3> Akriti Real Voice</h3>
+    <p>Where Every Note Tells a Story </p>
     <p>© 2026 Akriti Real Voice. All Rights Reserved.</p>
 </footer>
-
-<script>
-function searchAlbum(){
-
-    let input = document.getElementById("search").value.toLowerCase();
-    let cards = document.querySelectorAll(".album-card");
-
-    cards.forEach(card=>{
-
-        let title = card.querySelector("h2").innerText.toLowerCase();
-
-        if(title.includes(input)){
-            card.style.display = "block";
-        }else{
-            card.style.display = "none";
-        }
-    });
-}
-</script>
 
 </body>
 </html>
