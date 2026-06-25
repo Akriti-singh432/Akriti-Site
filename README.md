@@ -1,28 +1,28 @@
-# 🎤 Akriti Real Voice
+#  Akriti Real Voice
 
 Welcome to **Akriti Real Voice**, a music website created to share songs, albums, artists, and musical content through a simple and attractive web interface.
 
-## 🌟 About the Project
+##  About the Project
 
 Akriti Real Voice is a music platform designed using HTML and CSS. The website provides an organized way to explore songs, albums, and artists. The project will continue to grow with original voice recordings, devotional songs, and music performances in the future.
 
-## 🚀 Features
+##  Features
 
-- 🏠 Home Page
-- 🎵 Songs Section with Audio Player
-- 🎤 Artists Page
-- 💿 Albums Gallery
-- 📞 Contact Page
-- 📱 Responsive Design
-- ✨ Clean and User-Friendly Interface
+-  Home Page
+-  Songs Section with Audio Player
+-  Artists Page
+-  Albums Gallery
+-  Contact Page
+-  Responsive Design
+-  Clean and User-Friendly Interface
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3
 - Google Fonts
 
-## 📂 Website Structure
+##  Website Structure
 
 - Home
 - Songs
@@ -30,7 +30,7 @@ Akriti Real Voice is a music platform designed using HTML and CSS. The website p
 - Albums
 - Contact
 
-## 📸 Website Preview
+##  Website Preview
 
 ### Home Page
 
@@ -38,7 +38,7 @@ Akriti Real Voice is a music platform designed using HTML and CSS. The website p
 
 > Save your screenshot as **homepage.png** inside the **images** folder.
 
-## 🎯 Future Plans
+##  Future Plans
 
 - Upload original singing recordings
 - Add devotional songs
@@ -48,18 +48,18 @@ Akriti Real Voice is a music platform designed using HTML and CSS. The website p
 - Improve website design and animations
 - Connect YouTube and Instagram pages
 
-## 👩‍💻 Developer
+##  Developer
 
 **Akriti Singh**
 
-## 🎵 Brand Name
+##  Brand Name
 
 **Akriti Real Voice**
 
-## 📅 Year
+##  Year
 
 2026
 
-## 📜 License
+##  License
 
 This project is created for learning and portfolio purposes.
