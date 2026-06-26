@@ -106,7 +106,9 @@ nav a:hover{
     text-decoration:none;
 }
 
-
+.btn:hover{
+    background-color:#ff5a00;
+}
 .artist-container{
     width:90%;
     max-width:1200px;
